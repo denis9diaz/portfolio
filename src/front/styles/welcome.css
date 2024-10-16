@@ -105,6 +105,7 @@
     transform: translateY(-4px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     color: whitesmoke;
+    background: linear-gradient(to right, #c9a0f2, #7b59c6);
 }
 
 .contact-button svg {
