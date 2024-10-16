@@ -46,12 +46,10 @@ const Proyects = () => {
         <div className="proyects-component" ref={proyectsRef}>
             <div className={`projects-grid ${isVisible ? 'fade-in' : 'fade-out'}`}>
                 <div className="project">
-                    <a href="https://github.com/denis9diaz/Urban_Treasures" target="_blank" rel="noopener noreferrer">
-                        <img src={UrbanTreasures} className="img-proyects" alt="Urban Treasures" />
-                        <h3 className='h3-proyects'>Urban Treasures</h3>
-                        <p className='p-proyects'>Plataforma web interactiva donde los usuarios pueden registrarse para esconder o descubrir "tesoros urbanos".</p>
-                        <p className='p-proyects'>Funcionalidades como sistema de puntuación, rankings, perfil de usuario, entre otras.</p>
-                    </a>
+                    <img src={UrbanTreasures} className="img-proyects" alt="Urban Treasures" />
+                    <h3 className='h3-proyects'>Urban Treasures</h3>
+                    <p className='p-proyects'>Plataforma web interactiva donde los usuarios pueden registrarse para esconder o descubrir "tesoros urbanos".</p>
+                    <p className='p-proyects'>Funcionalidades como sistema de puntuación, rankings, perfil de usuario, entre otras.</p>
                     <div className="project-buttons">
                         <a href="https://res.cloudinary.com/dxzhssh9m/video/upload/v1715946078/Compartir_pantalla_-_2024-05-17_13_39_52_ixmpsg.mp4" target="_blank" rel="noopener noreferrer" className="button play-button">
                             <FaPlay size={24} />
@@ -74,12 +72,10 @@ const Proyects = () => {
                 </div>
 
                 <div className="project">
-                    <a href="https://github.com/denis9diaz/DenisBets_web" target="_blank" rel="noopener noreferrer">
-                        <img src={DenisBets} className="img-proyects" alt="DenisBets" />
-                        <h3 className='h3-proyects'>DenisBets</h3> 
-                        <p className='p-proyects'>Plataforma personal donde se ofrecen servicios de asesoramiento de pronósticos deportivos.</p>
-                        <p className='p-proyects'>Diseñada para ayudarte a optimizar tus apuestas deportivas mediante estadísticas.</p>
-                    </a>
+                    <img src={DenisBets} className="img-proyects" alt="DenisBets" />
+                    <h3 className='h3-proyects'>DenisBets</h3>
+                    <p className='p-proyects'>Plataforma personal donde se ofrecen servicios de asesoramiento de pronósticos deportivos.</p>
+                    <p className='p-proyects'>Diseñada para ayudarte a optimizar tus apuestas deportivas mediante estadísticas.</p>
                     <div className="project-buttons">
                         <a href="https://res.cloudinary.com/dxzhssh9m/video/upload/v1729007870/DenisBets720_opneva.mp4" target="_blank" rel="noopener noreferrer" className="button play-button">
                             <FaPlay size={24} />
@@ -100,12 +96,10 @@ const Proyects = () => {
                 </div>
 
                 <div className="project">
-                    <a href="https://github.com/denis9diaz/BetIntel" target="_blank" rel="noopener noreferrer">
-                        <img src={BetIntel} className="img-proyects" alt="BetIntel" />
-                        <h3 className='h3-proyects'>BetIntel</h3>
-                        <p className='p-proyects'>Plataforma en la que el usuario puede llevar un seguimiento de todos sus pronósticos y estadísticas.</p>
-                        <p className='p-proyects'>Enfocado tanto para pronosticadores como para usuarios que quieran contratar servicios.</p>
-                    </a>
+                    <img src={BetIntel} className="img-proyects" alt="BetIntel" />
+                    <h3 className='h3-proyects'>BetIntel</h3>
+                    <p className='p-proyects'>Plataforma en la que el usuario puede llevar un seguimiento de todos sus pronósticos y estadísticas.</p>
+                    <p className='p-proyects'>Enfocado tanto para pronosticadores como para usuarios que quieran contratar servicios.</p>
                     <div className="project-buttons">
                         <a href="https://res.cloudinary.com/tu_usuario/video/upload/v123456/betintel.mp4" target="_blank" rel="noopener noreferrer" className="button play-button">
                             <FaPlay size={24} />
@@ -128,12 +122,10 @@ const Proyects = () => {
                 </div>
 
                 <div className="project">
-                    <a href="https://github.com/denis9diaz/El_Rinconcito" target="_blank" rel="noopener noreferrer">
-                        <img src={ElRinconcito} className="img-proyects" alt="El Rinconcito" />
-                        <h3 className='h3-proyects'>El Rinconcito</h3>
-                        <p className='p-proyects'>Diseño completo de página web personalizada para el restaurante Madrileño "El Rinconcito"</p>
-                        <p className='p-proyects'>Información acerca del restaurante y funcionalidades como crear ruta desde tu ubicación y reservar una mesa.</p>
-                    </a>
+                    <img src={ElRinconcito} className="img-proyects" alt="El Rinconcito" />
+                    <h3 className='h3-proyects'>El Rinconcito</h3>
+                    <p className='p-proyects'>Diseño completo de página web personalizada para el restaurante Madrileño "El Rinconcito"</p>
+                    <p className='p-proyects'>Información acerca del restaurante y funcionalidades como crear ruta desde tu ubicación y reservar una mesa.</p>
                     <div className="project-buttons">
                         <a href="https://res.cloudinary.com/video/upload/v123456/elrinconcito.mp4" target="_blank" rel="noopener noreferrer" className="button play-button">
                             <FaPlay size={24} />

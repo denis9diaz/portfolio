@@ -184,4 +184,8 @@
         color: #5c45a0;
         font-size: 1rem;
     }
+
+    .row {
+        margin-top: -60px !important;
+    }
 }
