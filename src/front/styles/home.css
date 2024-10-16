@@ -1,0 +1,100 @@
+.theme-toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #514086;
+    transition: color 0.3s;
+}
+
+.theme-toggle-button:hover {
+    color: #7959da;
+}
+
+body.dark .theme-toggle-button {
+    color: #d1c4f9; 
+}
+
+body.dark .theme-toggle-button:hover {
+    color: #e0e0ff;
+}
+
+body.light {
+    background-color: #f7f6fa;
+    color: #333;
+}
+
+body.dark {
+    background-color: #1a1a1a;
+    color: #f7f6fa;
+}
+
+body.dark .welcome-image img {
+    box-shadow: 0 4px 20px rgba(207, 164, 235, 0.719); 
+}
+
+body.dark .welcome-container {
+    background: linear-gradient(to bottom right, #2a003e, #000000);
+    color: #e0e0ff;
+}
+
+body.dark .welcome-text h1 {
+    background: linear-gradient(to right, #846dc9, #eae2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.dark .welcome-text h4 {
+    color: #c1b4ff;
+}
+
+body.dark .proyects-component {
+    background: linear-gradient(to bottom left, #000000, #2a003e);
+}
+
+body.dark .h3-proyects {
+    background: none; 
+    color: #d1c4f9; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: unset;
+}
+
+body.dark .project:hover .h3-proyects {
+    color: #9c27b0; 
+}
+
+body.dark .p-proyects {
+    color: #e9cdf8;
+}
+
+body.dark .button {
+    background: linear-gradient(to right, #a792e9, #7b59c6); 
+}
+
+body.dark .button:hover {
+    background: linear-gradient(to right, #3a2b84, #6c59b3); 
+}
+
+body.light .h3-proyects {
+    background: linear-gradient(to right, #26105e, #0b0324); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light .project:hover .h3-proyects {
+    background: linear-gradient(to right, #987af0, #5c45a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light .p-proyects {
+    color: #1d0f46;
+}
+
+body.dark .footer{
+    background: linear-gradient(to right, #2A003E, #15001F);
+    color: #d6c9fc !important;
+}
