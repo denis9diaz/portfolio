@@ -171,3 +171,17 @@
 .animate-line {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .welcome-text h1 {
+        font-size: 2rem;
+        background: linear-gradient(to right, #554191, #b19deb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .welcome-text h4 {
+        color: #5c45a0;
+        font-size: 1rem;
+    }
+}
