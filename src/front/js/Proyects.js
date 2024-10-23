@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/proyects.css';
 import UrbanTreasures from '../img/UrbanTreasures.png';
 import DenisBets from '../img/DenisBets.png';
-import BetIntel from '../img/BetIntel.png';
+import Portfolio from '../img/portfolio.png';
 import ElRinconcito from '../img/ElRinconcito.png';
 
 import bootstrap from '../img/bootstrap.png';
@@ -96,15 +96,15 @@ const Proyects = () => {
                 </div>
 
                 <div className="project">
-                    <img src={BetIntel} className="img-proyects" alt="BetIntel" />
-                    <h3 className='h3-proyects'>BetIntel</h3>
-                    <p className='p-proyects'>Plataforma en la que el usuario puede llevar un seguimiento de todos sus pronósticos y estadísticas.</p>
-                    <p className='p-proyects'>Enfocado tanto para pronosticadores como para usuarios que quieran contratar servicios.</p>
+                    <img src={Portfolio} className="img-proyects" alt="Portfolio" />
+                    <h3 className='h3-proyects'>Portfolio</h3>
+                    <p className='p-proyects'>Explora mis proyectos más recientes, que destacan mis habilidades en desarrollo web y diseño.</p>
+                    <p className='p-proyects'>También puedes acceder a mi GitHub, LinkedIn y mi currículum.</p>
                     <div className="project-buttons">
-                        <a href="https://res.cloudinary.com/tu_usuario/video/upload/v123456/betintel.mp4" target="_blank" rel="noopener noreferrer" className="button play-button">
+                        <a href="https://denis9diaz.github.io/portfolio/" target="_blank" rel="noopener noreferrer" className="button play-button">
                             <FaPlay size={24} />
                         </a>
-                        <a href="https://github.com/denis9diaz/BetIntel" target="_blank" rel="noopener noreferrer" className="button code-button">
+                        <a href="https://github.com/denis9diaz/portfolio" target="_blank" rel="noopener noreferrer" className="button code-button">
                             <FaGithub size={24} />
                         </a>
                     </div>
@@ -114,8 +114,6 @@ const Proyects = () => {
                         <img src={javascript} alt="javascript" className="tech-icon" />
                         <img src={html} alt="html" className="tech-icon" />
                         <img src={css} alt="css" className="tech-icon" />
-                        <img src={sql} alt="sql" className="tech-icon" />
-                        <img src={jwt} alt="jwt" className="tech-icon" />
                         <img src={flask} alt="flask" className="tech-icon" />
                         <img src={bootstrap} alt="bootstrap" className="tech-icon" />
                     </div>
