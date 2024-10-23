@@ -125,7 +125,7 @@ const Proyects = () => {
                     <p className='p-proyects'>Diseño completo de página web personalizada para el restaurante Madrileño "El Rinconcito"</p>
                     <p className='p-proyects'>Información acerca del restaurante y funcionalidades como crear ruta desde tu ubicación y reservar una mesa.</p>
                     <div className="project-buttons">
-                        <a href="https://res.cloudinary.com/video/upload/v123456/elrinconcito.mp4" target="_blank" rel="noopener noreferrer" className="button play-button">
+                        <a href="https://res.cloudinary.com/dxzhssh9m/video/upload/v1729710170/Compartir_pantalla_-_2024-10-23_20_58_03_yv4fbk.mp4" target="_blank" rel="noopener noreferrer" className="button play-button">
                             <FaPlay size={24} />
                         </a>
                         <a href="https://github.com/denis9diaz/El_Rinconcito" target="_blank" rel="noopener noreferrer" className="button code-button">
