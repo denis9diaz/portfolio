@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/welcome.css';
 import mifoto from '../img/mifoto.png';
-import bandera from '../img/bandera.png';
 import { FaGithub, FaLinkedin, FaAddressCard, FaEnvelope } from 'react-icons/fa';
 
 const Welcome = () => {
@@ -33,7 +32,7 @@ const Welcome = () => {
                 <div className="col-md-6 welcome-text" ref={welcomeTextRef}>
                     <h1>Bienvenido!</h1>
                     <h4>
-                        Soy <b>Denis Díaz</b>, desarrollador Full Stack en Madrid, España <img src={bandera} className="img-bandera" alt="Bandera" />.
+                        Soy <b>Denis Díaz</b>, desarrollador Full Stack en Madrid, España.
                     </h4>
                     <h4>Aquí podrás explorar algunos de mis proyectos más destacados. ¡Espero que te gusten!</h4>
                 </div>
