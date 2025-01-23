@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.93132f79.css",
-    "main.js": "/portfolio/static/js/main.8c9d3e0f.js",
-    "static/js/488.71e63b53.chunk.js": "/portfolio/static/js/488.71e63b53.chunk.js",
+    "main.css": "/portfolio/static/css/main.f0d39db3.css",
+    "main.js": "/portfolio/static/js/main.a5d72297.js",
+    "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/UrbanTreasures.png": "/portfolio/static/media/UrbanTreasures.dac5b6f1c52b6e45ea79.png",
     "static/media/mifoto.png": "/portfolio/static/media/mifoto.1e88ea497a8541ce8f85.png",
     "static/media/ElRinconcito.png": "/portfolio/static/media/ElRinconcito.ede4a3fbe98ce4750ded.png",
@@ -17,12 +17,12 @@
     "static/media/python.webp": "/portfolio/static/media/python.8f11be9245e080c61711.webp",
     "static/media/jwt.webp": "/portfolio/static/media/jwt.4436b948358e74b62411.webp",
     "index.html": "/portfolio/index.html",
-    "main.93132f79.css.map": "/portfolio/static/css/main.93132f79.css.map",
-    "main.8c9d3e0f.js.map": "/portfolio/static/js/main.8c9d3e0f.js.map",
-    "488.71e63b53.chunk.js.map": "/portfolio/static/js/488.71e63b53.chunk.js.map"
+    "main.f0d39db3.css.map": "/portfolio/static/css/main.f0d39db3.css.map",
+    "main.a5d72297.js.map": "/portfolio/static/js/main.a5d72297.js.map",
+    "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93132f79.css",
-    "static/js/main.8c9d3e0f.js"
+    "static/css/main.f0d39db3.css",
+    "static/js/main.a5d72297.js"
   ]
 }
