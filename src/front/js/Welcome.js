@@ -27,7 +27,8 @@ const Welcome = () => {
                     <h4>
                         Soy <b>Denis Díaz</b>, desarrollador Full Stack en Madrid, España.
                     </h4>
-                    <h4>Aquí podrás explorar algunos de mis proyectos más destacados. ¡Espero que te gusten!</h4>
+                    <h4>Aquí podrás conocerme mejor y explorar algunos de mis proyectos más destacados.</h4>
+                    <h4>¡Espero que te gusten!</h4>
                 </div>
                 <div className="col-md-6 welcome-image" ref={welcomeImageRef}>
                     <img src={mifoto} alt="Foto de Denis" />

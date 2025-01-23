@@ -1,0 +1,34 @@
+.technologies-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom right, #f7f6fa, #d1c5f5); /* Estilo por defecto */
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.technologies-component.light-theme {
+    background: linear-gradient(to bottom right, #f7f6fa, #d1c5f5); /* Fondo claro */
+    color: #333; /* Texto oscuro */
+}
+
+.technologies-component.dark-theme {
+    background: linear-gradient(to bottom right, #29003D, #000001); /* Fondo oscuro */
+    color: #f7f6fa; /* Texto claro */
+}
+
+.technologies-component::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #514086;
+    box-shadow: 0 2px 4px rgba(108, 64, 133, 0.5);
+    z-index: 0;
+}

@@ -4,6 +4,8 @@ import Welcome from './Welcome';
 import Proyects from './Proyects';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import Technologies from './Technologies';
+import About from './About';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const Home = () => {
@@ -34,6 +36,8 @@ const Home = () => {
             </button>
             <Welcome />
             <Proyects />
+            <Technologies theme={theme}/>
+            <About theme={theme}/>
             <Footer />
         </div>
     );
