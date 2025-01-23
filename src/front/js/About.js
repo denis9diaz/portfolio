@@ -3,8 +3,8 @@ import '../styles/about.css';
 
 const About = ({ theme }) => {
   return (
-    <div className={`container-fluid about-component ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
-        About
+    <div id="about" className={`container-fluid about-component ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+        <h2>About</h2>
     </div>
   )
 }

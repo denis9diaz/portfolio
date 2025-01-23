@@ -7,7 +7,7 @@ import ElRinconcito from '../img/ElRinconcito.png';
 
 import bootstrap from '../img/bootstrap.png';
 import css from '../img/css.png';
-import flask from '../img/flask-icon.png';
+import flask from '../img/flask-icon.jpg';
 import html from '../img/html.png';
 import javascript from '../img/javascript.webp';
 import jwt from '../img/jwt.webp';

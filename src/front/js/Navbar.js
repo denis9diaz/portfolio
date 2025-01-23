@@ -24,10 +24,10 @@ const Navbar = ({ theme }) => {
               <a className="nav-link" href="#proyects">Proyectos</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#tecnologias">Tecnologías</a>
+              <a className="nav-link" href="#technologies">Tecnologías</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#sobremi">Sobre mí</a>
+              <a className="nav-link" href="#about">Sobre mí</a>
             </li>
           </ul>
         </div>
