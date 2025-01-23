@@ -1,0 +1,84 @@
+.navbar-nav {
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.2rem;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+
+/* Estilo para el navbar en el tema claro */
+body.light .navbar {
+    background: linear-gradient(to right, #f7f6fa, #E4DEF8); /* Fondo similar al del home */
+    color: #333;
+}
+
+body.light .navbar-nav .nav-link {
+    color: #26105e;
+    position: relative;
+    padding: 5px 10px;
+    /* Eliminamos el borde inferior */
+    transition: color 0.3s ease;
+}
+
+/* Efecto de subrayado animado */
+body.light .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #987af0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+body.light .navbar-nav .nav-link:hover {
+    color: #8367d4; /* Cambiar el color al pasar el mouse */
+}
+
+body.light .navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left; /* Efecto de subrayado que entra de izquierda a derecha */
+}
+
+/* Estilo para el navbar en el tema oscuro */
+body.dark .navbar {
+    background: linear-gradient(to right, #29003D, #15001F); /* Fondo similar al del home */
+    color: #f7f6fa;
+}
+
+body.dark .navbar-nav .nav-link {
+    color: #e0e0ff;
+    position: relative;
+    padding: 5px 10px;
+    /* Eliminamos el borde inferior */
+    transition: color 0.3s ease;
+}
+
+/* Efecto de subrayado animado */
+body.dark .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #ae9eff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+body.dark .navbar-nav .nav-link:hover {
+    color: #c1b4ff; /* Cambiar el color al pasar el mouse */
+}
+
+body.dark .navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left; /* Efecto de subrayado que entra de izquierda a derecha */
+}

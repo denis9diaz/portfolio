@@ -43,7 +43,7 @@ const Proyects = () => {
     }, []);
 
     return (
-        <div className="proyects-component" ref={proyectsRef}>
+        <div id="proyects" className="proyects-component" ref={proyectsRef}>
             <div className={`projects-grid ${isVisible ? 'fade-in' : 'fade-out'}`}>
                 <div className="project">
                     <img src={UrbanTreasures} className="img-proyects" alt="Urban Treasures" />

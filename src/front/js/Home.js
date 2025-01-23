@@ -3,6 +3,7 @@ import '../styles/home.css';
 import Welcome from './Welcome'; 
 import Proyects from './Proyects';
 import Footer from './Footer';
+import Navbar from './Navbar';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
 
     return (
         <div className={`super-home ${theme}`}>
+            <Navbar theme={theme} />
             <button className="theme-toggle-button" onClick={toggleTheme}>
                 {theme === 'light' ? <FaMoon size={20} /> : <FaSun size={20} />}
             </button>

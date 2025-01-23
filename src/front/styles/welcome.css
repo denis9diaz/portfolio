@@ -144,30 +144,6 @@
     opacity: 1;
 }
 
-.line-top {
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    width: 300px;
-    height: 8px;
-    background: linear-gradient(to right, #554191, #b19deb);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 0;
-}
-
-.line-bottom {
-    position: absolute;
-    bottom: 50px;
-    right: 10px;
-    width: 300px;
-    height: 8px;
-    background: linear-gradient(to right, #554191, #b19deb);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 0;
-}
-
 .animate-line {
     opacity: 1;
 }

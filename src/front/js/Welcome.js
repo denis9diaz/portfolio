@@ -6,28 +6,21 @@ import { FaGithub, FaLinkedin, FaAddressCard, FaEnvelope } from 'react-icons/fa'
 const Welcome = () => {
     const welcomeTextRef = useRef(null);
     const welcomeImageRef = useRef(null);
-    const lineTopRef = useRef(null);
-    const lineBottomRef = useRef(null);
 
     useEffect(() => {
         const textElement = welcomeTextRef.current;
         const imageElement = welcomeImageRef.current;
-        const lineTopElement = lineTopRef.current;
-        const lineBottomElement = lineBottomRef.current;
 
         setTimeout(() => {
-            if (textElement && imageElement && lineTopElement && lineBottomElement) {
+            if (textElement && imageElement) {
                 textElement.classList.add('animate-text');
                 imageElement.classList.add('animate-image');
-                lineTopElement.classList.add('animate-line');
-                lineBottomElement.classList.add('animate-line');
             }
         }, 300);
     }, []);
 
     return (
         <div className="container-fluid welcome-container">
-            <div className="line-top" ref={lineTopRef}></div>
             <div className="row">
                 <div className="col-md-6 welcome-text" ref={welcomeTextRef}>
                     <h1>Bienvenido!</h1>
@@ -54,7 +47,6 @@ const Welcome = () => {
                     </a>
                 </div>
             </div>
-            <div className="line-bottom" ref={lineBottomRef}></div>
         </div>
     );
 };

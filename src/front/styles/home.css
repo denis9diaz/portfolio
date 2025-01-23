@@ -98,3 +98,14 @@ body.dark .footer{
     background: linear-gradient(to right, #2A003E, #15001F);
     color: #d6c9fc !important;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .theme-toggle-button {
+        top: 10px;
+        right: 10px;
+    }
+}
