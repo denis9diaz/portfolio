@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4136e632.css",
-    "main.js": "/portfolio/static/js/main.b8e83e99.js",
+    "main.js": "/portfolio/static/js/main.81462400.js",
     "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/UrbanTreasures.png": "/portfolio/static/media/UrbanTreasures.dac5b6f1c52b6e45ea79.png",
     "static/media/mifoto.png": "/portfolio/static/media/mifoto.1e88ea497a8541ce8f85.png",
     "static/media/ElRinconcito.png": "/portfolio/static/media/ElRinconcito.ede4a3fbe98ce4750ded.png",
     "static/media/DenisBets.png": "/portfolio/static/media/DenisBets.1a44e82f219dc7df5c80.png",
-    "static/media/portfolio.png": "/portfolio/static/media/portfolio.b015cd8b0938ba6991ef.png",
+    "static/media/BetIntel.png": "/portfolio/static/media/BetIntel.2ef891a56062d02967cb.png",
     "static/media/flask.png": "/portfolio/static/media/flask.17562dff5d07f94fb94b.png",
     "static/media/angular.png": "/portfolio/static/media/angular.8011d83124f8f3d82644.png",
     "static/media/sql.png": "/portfolio/static/media/sql.519a271ad6537a824c0c.png",
@@ -23,11 +23,11 @@
     "static/media/jwt.webp": "/portfolio/static/media/jwt.4436b948358e74b62411.webp",
     "index.html": "/portfolio/index.html",
     "main.4136e632.css.map": "/portfolio/static/css/main.4136e632.css.map",
-    "main.b8e83e99.js.map": "/portfolio/static/js/main.b8e83e99.js.map",
+    "main.81462400.js.map": "/portfolio/static/js/main.81462400.js.map",
     "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4136e632.css",
-    "static/js/main.b8e83e99.js"
+    "static/js/main.81462400.js"
   ]
 }
