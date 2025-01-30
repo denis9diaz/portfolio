@@ -3,22 +3,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px 20px;
     min-height: 100vh;
     position: relative;
-    background: linear-gradient(to top right, #f7f6fa, #d1c5f5); /* Estilo por defecto */
+    background: linear-gradient(to top right, #f7f6fa, #d1c5f5);
     font-family: 'Montserrat', sans-serif;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 .about-component.light-theme {
-    background: linear-gradient(to top right, #f7f6fa, #d1c5f5); /* Fondo claro */
-    color: #333; /* Texto oscuro */
+    background: linear-gradient(to top right, #f7f6fa, #d1c5f5);
+    color: #3c2c6d;
 }
 
 .about-component.dark-theme {
-    background: linear-gradient(to bottom left, #000001, #2A003E); /* Fondo oscuro */
-    color: #f7f6fa; /* Texto claro */
+    background: linear-gradient(to bottom left, #000001, #2A003E);
+    color: #e5e3eb;
 }
 
 .about-component::before {
@@ -31,4 +31,53 @@
     background-color: #514086;
     box-shadow: 0 2px 4px rgba(108, 64, 133, 0.5);
     z-index: 0;
+}
+
+.title-about {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 1200px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-highlight {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.experience-counter {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-counter:hover {
+    transform: scale(1.1);
+}
+
+.experience-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6d28d9;
 }
