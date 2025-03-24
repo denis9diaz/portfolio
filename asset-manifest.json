@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1accb53e.css",
-    "main.js": "/portfolio/static/js/main.79a2d0a4.js",
+    "main.js": "/portfolio/static/js/main.7aa9359c.js",
     "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/UrbanTreasures.png": "/portfolio/static/media/UrbanTreasures.dac5b6f1c52b6e45ea79.png",
     "static/media/mifoto.png": "/portfolio/static/media/mifoto.1e88ea497a8541ce8f85.png",
@@ -10,6 +10,7 @@
     "static/media/BetIntel.png": "/portfolio/static/media/BetIntel.2ef891a56062d02967cb.png",
     "static/media/flask.png": "/portfolio/static/media/flask.17562dff5d07f94fb94b.png",
     "static/media/angular.png": "/portfolio/static/media/angular.8011d83124f8f3d82644.png",
+    "static/media/astro.png": "/portfolio/static/media/astro.25240e6d3b161a916ca6.png",
     "static/media/sql.png": "/portfolio/static/media/sql.519a271ad6537a824c0c.png",
     "static/media/fastapi.png": "/portfolio/static/media/fastapi.5753568216dca4fea0eb.png",
     "static/media/react.png": "/portfolio/static/media/react.404167651b40e37feacf.png",
@@ -23,11 +24,11 @@
     "static/media/jwt.webp": "/portfolio/static/media/jwt.4436b948358e74b62411.webp",
     "index.html": "/portfolio/index.html",
     "main.1accb53e.css.map": "/portfolio/static/css/main.1accb53e.css.map",
-    "main.79a2d0a4.js.map": "/portfolio/static/js/main.79a2d0a4.js.map",
+    "main.7aa9359c.js.map": "/portfolio/static/js/main.7aa9359c.js.map",
     "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1accb53e.css",
-    "static/js/main.79a2d0a4.js"
+    "static/js/main.7aa9359c.js"
   ]
 }
