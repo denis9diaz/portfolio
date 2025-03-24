@@ -13,6 +13,7 @@ import angular from '../img/angular.png';
 import django from '../img/django.png';
 import fastapi from '../img/fastapi.png';
 import typescript from '../img/typescript.png';
+import astro from '../img/astro.png';
 
 const backendTechnologies = [
   { name: 'Python', img: python },
@@ -29,6 +30,7 @@ const frontendTechnologies = [
   { name: 'TypeScript', img: typescript },
   { name: 'HTML', img: html },
   { name: 'CSS', img: css },
+  { name: 'Astro', img: astro },
 ];
 
 const Technologies = ({ theme }) => {
