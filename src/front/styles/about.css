@@ -81,3 +81,15 @@
     font-weight: 700;
     color: #6d28d9;
 }
+
+@media (max-width: 1300px) {
+    .about-content {
+        padding: 0 40px; /* Más margen a los lados del texto */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 0 20px; /* Agrega margen a los lados del texto */
+    }
+}
