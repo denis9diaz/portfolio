@@ -36,7 +36,7 @@ const Welcome = () => {
                         <a href="https://github.com/denis9diaz" target="_blank" rel="noopener noreferrer">
                             <FaGithub size={40} />
                         </a>
-                        <a href="https://www.linkedin.com/in/denis-diaz-romero-1b7055165/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/denis-diaz-romero/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={40} />
                         </a>
                         <a href="https://drive.google.com/file/d/1ZqdMBB0jHEP21MX_C4BMI6ccFwy3eDjc/view" target="_blank" rel="noopener noreferrer">
