@@ -5,7 +5,7 @@ import IndividualProyect from './IndividualProyect';
 import UrbanTreasures from '../img/UrbanTreasures.png';
 import DenisBets from '../img/DenisBets.png';
 import BetIntel from '../img/BetIntel.png';
-import ElRinconcito from '../img/ElRinconcito.png';
+import BetTracker from '../img/BetTracker.png';
 
 import bootstrap from '../img/bootstrap.png';
 import css from '../img/css.png';
@@ -16,12 +16,36 @@ import jwt from '../img/jwt.webp';
 import python from '../img/python.webp';
 import react from '../img/react.png';
 import sql from '../img/sql.png';
+import typescript from '../img/typescript.png';
+import django from '../img/django.png';
+import astro from '../img/astro.png';
+import tailwind from '../img/tailwind.png';
 
 const Proyects = () => {
     const [isVisible, setIsVisible] = useState(false);
     const proyectsRef = useRef(null);
 
     const projectsData = [
+        {
+            image: BetTracker,
+            title: 'BetTracker',
+            descriptions: [
+                'Diseño completo de página web personalizada para registar todos tus análisis deportivos y estadísticas.',
+                'Sistema de registro de usuarios, estadísticas y análisis deportivos.',
+            ],
+            videoLink: 'https://analisis-virid.vercel.app/',
+            codeLink: 'https://github.com/denis9diaz/Analisis',
+            technologies: [
+                { src: astro, alt: 'astro' },
+                { src: react, alt: 'react' },
+                { src: typescript, alt: 'typescript' },
+                { src: tailwind, alt: 'tailwind' },
+                { src: python, alt: 'python' },
+                { src: django, alt: 'django' },
+                { src: jwt, alt: 'jwt' },
+                { src: sql, alt: 'sql' },
+            ]
+        },
         {
             image: UrbanTreasures,
             title: 'Urban Treasures',
@@ -79,26 +103,6 @@ const Proyects = () => {
                 { src: css, alt: 'css' },
                 { src: sql, alt: 'sql' },
                 { src: jwt, alt: 'jwt' },
-                { src: flask, alt: 'flask' },
-                { src: bootstrap, alt: 'bootstrap' }
-            ]
-        },
-        {
-            image: ElRinconcito,
-            title: 'El Rinconcito',
-            descriptions: [
-                'Diseño completo de página web personalizada para el restaurante Madrileño "El Rinconcito"',
-                'Información acerca del restaurante y funcionalidades como crear ruta desde tu ubicación y reservar una mesa.'
-            ],
-            videoLink: 'https://res.cloudinary.com/dxzhssh9m/video/upload/v1729710170/Compartir_pantalla_-_2024-10-23_20_58_03_yv4fbk.mp4',
-            codeLink: 'https://github.com/denis9diaz/El_Rinconcito',
-            technologies: [
-                { src: react, alt: 'react' },
-                { src: python, alt: 'python' },
-                { src: javascript, alt: 'javascript' },
-                { src: html, alt: 'html' },
-                { src: css, alt: 'css' },
-                { src: sql, alt: 'sql' },
                 { src: flask, alt: 'flask' },
                 { src: bootstrap, alt: 'bootstrap' }
             ]
