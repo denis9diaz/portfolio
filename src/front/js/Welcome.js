@@ -39,7 +39,7 @@ const Welcome = () => {
                         <a href="https://www.linkedin.com/in/denis-diaz-romero/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={40} />
                         </a>
-                        <a href="https://drive.google.com/file/d/119-QgaRR2udvHQ8VrQdZClq-WypMrVHA/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/file/d/1LslImiI23ZLKR48sPMOvBIAjhabectI5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                             <FaAddressCard size={40} />
                         </a>
                     </div>
