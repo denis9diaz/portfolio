@@ -23,15 +23,14 @@
   }
   
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Siempre 4 columnas */
-    gap: 20px; /* Espaciado entre los elementos */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: start; /* Alinea los elementos verticalmente */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: start;
+    gap: 20px;
     padding: 5px;
-    height: 100%;
   }
-  
+    
   .technologies {
     display: none;
     justify-content: center;
