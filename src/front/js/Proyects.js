@@ -86,27 +86,27 @@ const Proyects = () => {
                 { src: bootstrap, alt: 'bootstrap' }
             ]
         },
-        {
-            image: BetIntel,
-            title: 'BetIntel',
-            descriptions: [
-                'Enfocado tanto para pronosticadores como para usuarios que quieran ver quienes son los pronosticadores mas rentables.',
-                'También podrás seguirlos o contratar sus servicios.'
-            ],
-            videoLink: 'https://res.cloudinary.com/dxzhssh9m/video/upload/v1738247617/Compartir_pantalla_-_2025-01-30_15_31_55_oddiw4.mp4',
-            codeLink: 'https://github.com/denis9diaz/BetIntel',
-            technologies: [
-                { src: react, alt: 'react' },
-                { src: python, alt: 'python' },
-                { src: javascript, alt: 'javascript' },
-                { src: html, alt: 'html' },
-                { src: css, alt: 'css' },
-                { src: sql, alt: 'sql' },
-                { src: jwt, alt: 'jwt' },
-                { src: flask, alt: 'flask' },
-                { src: bootstrap, alt: 'bootstrap' }
-            ]
-        },
+        //{
+            //image: BetIntel,
+            //title: 'BetIntel',
+           // descriptions: [
+                //'Enfocado tanto para pronosticadores como para usuarios que quieran ver quienes son los pronosticadores mas rentables.',
+              //  'También podrás seguirlos o contratar sus servicios.'
+            //],
+           // videoLink: 'https://res.cloudinary.com/dxzhssh9m/video/upload/v1738247617/Compartir_pantalla_-_2025-01-30_15_31_55_oddiw4.mp4',
+            //codeLink: 'https://github.com/denis9diaz/BetIntel',
+            //technologies: [
+               // { src: react, alt: 'react' },
+                //{ src: python, alt: 'python' },
+                //{ src: javascript, alt: 'javascript' },
+               // { src: html, alt: 'html' },
+                //{ src: css, alt: 'css' },
+                //{ src: sql, alt: 'sql' },
+              //  { src: jwt, alt: 'jwt' },
+            //    { src: flask, alt: 'flask' },
+          //      { src: bootstrap, alt: 'bootstrap' }
+        //    ]
+       // },
     ];
 
     useEffect(() => {
