@@ -53,7 +53,7 @@ const Proyects = () => {
         "Diseño completo de página web donde se muestran las probabilidades de cada partido basadas en métodos estadísticos verificados.",
         "Sistema de registro de usuarios y cálculo automático de estadísticas.",
       ],
-      videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1748975479/Compartir_pantalla_-_2025-06-03_20_26_14_xwili4.mp4",
+      videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1749462840/Compartir_pantalla_-_2025-06-09_11_52_53_ybvlgi.mp4",
       codeLink: "https://github.com/denis9diaz/Football_Analytics",
       technologies: [
         { src: astro, alt: "astro" },
