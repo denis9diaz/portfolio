@@ -5,7 +5,7 @@ import IndividualProyect from "./IndividualProyect";
 import UrbanTreasures from "../img/UrbanTreasures.png";
 import DenisBets from "../img/DenisBets.png";
 import BetTracker from "../img/BetTracker.png";
-import FutbolAnalytics from "../img/FutbolAnalytics.png";
+import FutbolAnalytics from "../img/FutbolAnalytics.webp";
 
 import bootstrap from "../img/bootstrap.png";
 import css from "../img/css.png";
@@ -53,7 +53,7 @@ const Proyects = () => {
         "Diseño completo de página web donde se muestran las probabilidades de cada partido basadas en métodos estadísticos verificados.",
         "Sistema de registro de usuarios y cálculo automático de estadísticas.",
       ],
-      videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1749462840/Compartir_pantalla_-_2025-06-09_11_52_53_ybvlgi.mp4",
+      videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1750245355/video_demo_ymsggb.mp4",
       codeLink: "https://github.com/denis9diaz/Football_Analytics",
       technologies: [
         { src: astro, alt: "astro" },
