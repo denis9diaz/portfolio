@@ -5,7 +5,7 @@ import IndividualProyect from "./IndividualProyect";
 import UrbanTreasures from "../img/UrbanTreasures.png";
 import DenisBets from "../img/DenisBets.png";
 import BetTracker from "../img/BetTracker.png";
-import FutbolAnalytics from "../img/FutbolAnalytics.webp";
+import FutbolAnalytics from "../img/FutbolAnalytics.png";
 
 import bootstrap from "../img/bootstrap.png";
 import css from "../img/css.png";
@@ -21,20 +21,20 @@ import django from "../img/django.png";
 import astro from "../img/astro.png";
 import tailwind from "../img/tailwind.png";
 
-const Proyects = () => {
+const Proyects = ({ theme }) => {
   const [isVisible, setIsVisible] = useState(false);
   const proyectsRef = useRef(null);
 
   const projectsData = [
     {
-      image: BetTracker,
-      title: "BetTracker",
+      image: FutbolAnalytics,
+      title: "Fútbol Analytics",
       descriptions: [
-        "Diseño completo de página web personalizada para registar todos tus análisis deportivos y estadísticas.",
-        "Sistema de registro de usuarios, estadísticas y análisis deportivos.",
+        "Diseño completo de página web donde se muestran las probabilidades de cada partido basadas en métodos estadísticos verificados.",
+        "Sistema de registro de usuarios y cálculo automático de estadísticas.",
       ],
-      videoLink: "https://analisis-virid.vercel.app/",
-      codeLink: "https://github.com/denis9diaz/Analisis",
+      videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1750950416/Compartir_pantalla_-_2025-06-26_17_03_03_e1ainx.mp4",
+      codeLink: "https://football-analytics-ten.vercel.app/",
       technologies: [
         { src: astro, alt: "astro" },
         { src: react, alt: "react" },
@@ -47,14 +47,14 @@ const Proyects = () => {
       ],
     },
     {
-      image: FutbolAnalytics,
-      title: "Fútbol Analytics",
+      image: BetTracker,
+      title: "BetTracker",
       descriptions: [
-        "Diseño completo de página web donde se muestran las probabilidades de cada partido basadas en métodos estadísticos verificados.",
-        "Sistema de registro de usuarios y cálculo automático de estadísticas.",
+        "Diseño completo de página web personalizada para registar todos tus análisis deportivos y estadísticas.",
+        "Sistema de registro de usuarios, estadísticas y análisis deportivos.",
       ],
-      videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1750245355/video_demo_ymsggb.mp4",
-      codeLink: "https://github.com/denis9diaz/Football_Analytics",
+      videoLink: "https://analisis-virid.vercel.app/",
+      codeLink: "https://analisis-virid.vercel.app/",
       technologies: [
         { src: astro, alt: "astro" },
         { src: react, alt: "react" },
@@ -135,10 +135,16 @@ const Proyects = () => {
   }, []);
 
   return (
-    <div id="proyects" className="proyects-component" ref={proyectsRef}>
+    <div id="proyects" className={`proyects-component ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`} ref={proyectsRef}>
+      <div className="projects-header">
+        <h2 className="projects-title">Proyectos Destacados</h2>
+        <p className="projects-subtitle">
+          Una selección de mis trabajos más recientes y significativos
+        </p>
+      </div>
       <div className={`projects-grid ${isVisible ? "fade-in" : "fade-out"}`}>
         {projectsData.map((project, index) => (
-          <IndividualProyect key={index} {...project} />
+          <IndividualProyect key={index} {...project} index={index} />
         ))}
       </div>
     </div>

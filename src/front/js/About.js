@@ -1,46 +1,141 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import '../styles/about.css';
 
 const About = ({ theme }) => {
-  const startDate = new Date(2023, 10, 1); // Noviembre 2023 (mes 10, porque los meses empiezan en 0)
+  const startDate = new Date(2023, 10, 1);
   const [experienceYears, setExperienceYears] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, threshold: 0.1 });
 
   useEffect(() => {
     const currentDate = new Date();
     const diffInTime = currentDate - startDate;
-    const diffInYears = diffInTime / (1000 * 3600 * 24 * 365); // Convierte el tiempo en años
-
-    // Si ya pasó más de un año, mostramos "1+" y si no, mostramos "1+" igualmente (ajustado).
-    setExperienceYears(Math.floor(diffInYears) >= 1 ? 1 : 0); // Asegura que no se muestre 2+ aún
+    const diffInYears = diffInTime / (1000 * 3600 * 24 * 365);
+    setExperienceYears(Math.floor(diffInYears) >= 1 ? 1 : 0);
   }, []);
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    }
+  };
+
   return (
-    <div id="about" className={`container-fluid about-component ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
-      <h2 className="title-about">
-        Sobre mí
-      </h2>
-      <div className="about-content">
-        <p>
-          Mi camino en la programación comenzó en 2023, cuando decidí dar el paso y aprender aquello que siempre me había llamado la atención, pero que nunca me había decidido a estudiar. Me formé en el bootcamp de 4Geeks Academy, donde aprendí tecnologías y frameworks como <strong>JavaScript</strong>, <strong>React</strong>, <strong>Python</strong>, <strong>Flask</strong>, <strong>PostgreSQL</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>
-        , entre otras. Desde entonces, he trabajado en proyectos tanto personales como colectivos, aplicando todo lo aprendido.
-        </p>
-        <p>
-          He desarrollado varios <strong>proyectos personales</strong> que actualmente utilizo como ayuda en algunas de mis fuentes de ingresos, aplicados a la bolsa de valores y al análisis estadístico en el ámbito deportivo. Además, sigo trabajando en otros proyectos en paralelo y colaboro con compañeros del bootcamp en el desarrollo de sus proyectos, lo que me ha permitido seguir ampliando mis conocimientos y experiencia en entornos colaborativos.
-        </p>
-        <p>
-          Para seguir creciendo profesionalmente, participé en un <strong>Training IT</strong> con la empresa <strong>Igrowker</strong>, donde trabajé en el backend de una aplicación desarrollada para un cliente real. Formé parte de un equipo de más de 20 personas en un entorno que simulaba la dinámica de una empresa tecnológica, adquiriendo experiencia en metodologías ágiles, trabajo en equipo y comunicación efectiva. Durante este entrenamiento, aprendí desde cero tecnologías como <strong>TypeScript, Angular y Django</strong>. Una vez finalizado el programa, decidí continuar mejorando la aplicación con un grupo reducido de compañeros, encargándome tanto del backend como del frontend. Durante esta etapa, aprendí <strong>Redis y FastAPI</strong>, ya que lo implementamos para mejorar el rendimiento del sistema.
-        </p>
-        <p>
-          Me considero una persona <strong>perseverante, perfeccionista y trabajadora</strong>, con gran capacidad de comunicación y trabajo en equipo. Siempre estoy en busca de nuevos aprendizajes y oportunidades para seguir evolucionando como desarrollador.
-        </p>
-        <p className="about-highlight">
-          Actualmente, sigo programando cada día, explorando nuevas tecnologías y perfeccionando mis habilidades. Estoy siempre abierto a nuevos retos.
-        </p>
-      </div>
-      <div className="experience-counter">
-        <span className="experience-number">{experienceYears}+</span> años de experiencia aprendiendo y creando
-      </div>
-    </div>
+    <section id="about" className={`about-section ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+      <motion.div 
+        ref={ref}
+        className="about-container"
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
+        {/* Header */}
+        <motion.div className="about-header" variants={itemVariants}>
+          <h2 className="about-title">Sobre mí</h2>
+          <p className="about-subtitle">
+            Mi trayectoria como desarrollador full-stack
+          </p>
+        </motion.div>
+
+        {/* Content Grid */}
+        <div className="about-content-grid">
+          {/* Story Card */}
+          <motion.div className="about-card story-card" variants={itemVariants}>
+            <div className="card-icon">
+              <span>👨‍💻</span>
+            </div>
+            <h3>Mi Historia</h3>
+            <p>
+              Mi camino en la programación comenzó en 2023, cuando decidí dar el paso y aprender aquello que siempre me había llamado la atención. Me formé en el bootcamp de <strong>4Geeks Academy</strong>, donde aprendí tecnologías como <strong>JavaScript</strong>, <strong>React</strong>, <strong>Python</strong>, <strong>Flask</strong>, <strong>PostgreSQL</strong> y más.
+            </p>
+          </motion.div>
+
+          {/* Experience Card */}
+          <motion.div className="about-card experience-card" variants={itemVariants}>
+            <div className="card-icon">
+              <span>🚀</span>
+            </div>
+            <h3>Experiencia Profesional</h3>
+            <p>
+              Participé en un <strong>Training IT</strong> con <strong>Igrowker</strong>, trabajando en el backend de una aplicación para un cliente real en un equipo de más de 20 personas. Aprendí <strong>TypeScript</strong>, <strong>Angular</strong>, <strong>Django</strong>, <strong>Redis</strong> y <strong>FastAPI</strong>.
+            </p>
+          </motion.div>
+
+          {/* Projects Card */}
+          <motion.div className="about-card projects-card" variants={itemVariants}>
+            <div className="card-icon">
+              <span>💼</span>
+            </div>
+            <h3>Proyectos Personales</h3>
+            <p>
+              He desarrollado varios <strong>proyectos personales</strong> aplicados al análisis estadístico deportivo y la bolsa de valores, que actualmente utilizo como herramientas profesionales. Colaboro constantemente con otros desarrolladores en proyectos innovadores.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Skills & Stats */}
+        <motion.div className="about-stats" variants={itemVariants}>
+          <div className="stat-item">
+            <motion.div 
+              className="stat-number"
+              animate={{ scale: [1, 1.1, 1] }}
+              transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+            >
+              {experienceYears}+
+            </motion.div>
+            <span className="stat-label">Años de Experiencia</span>
+          </div>
+          <div className="stat-item">
+            <motion.div 
+              className="stat-number"
+              animate={{ scale: [1, 1.1, 1] }}
+              transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 0.5 }}
+            >
+              10+
+            </motion.div>
+            <span className="stat-label">Tecnologías Dominadas</span>
+          </div>
+          <div className="stat-item">
+            <motion.div 
+              className="stat-number"
+              animate={{ scale: [1, 1.1, 1] }}
+              transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 1 }}
+            >
+              4+
+            </motion.div>
+            <span className="stat-label">Proyectos Completados</span>
+          </div>
+        </motion.div>
+
+        {/* Call to Action */}
+        <motion.div className="about-cta" variants={itemVariants}>
+          <p className="cta-text">
+            Me considero una persona <strong>perseverante</strong>, <strong>perfeccionista</strong> y <strong>trabajadora</strong>, 
+            con gran capacidad de comunicación y trabajo en equipo. Siempre estoy en busca de nuevos 
+            aprendizajes y oportunidades para seguir evolucionando como desarrollador.
+          </p>
+          <div className="cta-highlight">
+            <span className="highlight-icon">⚡</span>
+            <span>Actualmente disponible para nuevos proyectos y colaboraciones</span>
+          </div>
+        </motion.div>
+      </motion.div>
+    </section>
   );
 }
 
