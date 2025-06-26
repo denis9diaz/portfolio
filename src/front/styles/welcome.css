@@ -223,6 +223,20 @@
   overflow: hidden;
 }
 
+.contact-button:focus,
+.contact-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .contact-button:focus,
+  .contact-button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
 .contact-button::before {
   content: "";
   position: absolute;

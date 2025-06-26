@@ -5,6 +5,7 @@ import { FaPlay, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const IndividualProyect = ({ image, title, descriptions, videoLink, codeLink, technologies, index }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [imageLoaded, setImageLoaded] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -13,6 +14,18 @@ const IndividualProyect = ({ image, title, descriptions, videoLink, codeLink, te
         img.onload = () => setImageLoaded(true);
         img.src = image;
     }, [image]);
+
+    // Hook para detectar dispositivos móviles
+    useEffect(() => {
+        const checkIsMobile = () => {
+            setIsMobile(window.innerWidth <= 768 || 'ontouchstart' in window);
+        };
+        
+        checkIsMobile();
+        window.addEventListener('resize', checkIsMobile);
+        
+        return () => window.removeEventListener('resize', checkIsMobile);
+    }, []);
 
     const containerVariants = {
         hidden: { 
@@ -57,7 +70,7 @@ const IndividualProyect = ({ image, title, descriptions, videoLink, codeLink, te
     return (
         <motion.div 
             ref={ref}
-            className="project"
+            className={`project ${isMobile ? 'mobile-project' : ''}`}
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
@@ -103,7 +116,7 @@ const IndividualProyect = ({ image, title, descriptions, videoLink, codeLink, te
                     className="technologies"
                     variants={techVariants}
                     initial="hidden"
-                    animate={isHovered ? "visible" : "hidden"}
+                    animate={isMobile ? (isInView ? "visible" : "hidden") : (isHovered ? "visible" : "hidden")}
                 >
                     {technologies.map((tech, techIndex) => (
                         <motion.div

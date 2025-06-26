@@ -220,6 +220,19 @@
   border: 1px solid rgba(152, 122, 240, 0.1);
 }
 
+/* Mostrar tecnologías en dispositivos táctiles */
+@media (hover: none) and (pointer: coarse) {
+  .technologies {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .tech-icon-container {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+}
+
 .tech-icon-container {
   position: relative;
   display: flex;
@@ -578,6 +591,17 @@ body.dark .floating-element.element-2 {
     min-height: 450px;
   }
   
+  /* Mostrar tecnologías siempre en móvil */
+  .mobile-project .technologies {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .mobile-project .tech-icon-container {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+  
   .project-image-container {
     height: 200px;
   }
@@ -618,6 +642,17 @@ body.dark .floating-element.element-2 {
   .project {
     padding: 15px;
     border-radius: 15px;
+  }
+  
+  /* Asegurar que las tecnologías sean visibles en móviles pequeños */
+  .mobile-project .technologies {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .mobile-project .tech-icon-container {
+    opacity: 1 !important;
+    transform: scale(1) !important;
   }
   
   .project-image-container {

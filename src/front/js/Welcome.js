@@ -136,8 +136,8 @@ const Welcome = ({ theme }) => {
           <motion.p className="welcome-description">
             Especializado en crear{" "}
             <span className="highlight-text">soluciones web modernas</span> y
-            eficientes. Me apasiona transformar ideas en aplicaciones
-            funcionales utilizando las últimas tecnologías.
+            eficientes. Disfruto transformando ideas en aplicaciones
+            funcionales utilizando diferentes tecnologías.
           </motion.p>
 
           <motion.div className="welcome-location">
