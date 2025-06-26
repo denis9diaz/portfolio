@@ -44,34 +44,32 @@ const Navbar = ({ theme, onThemeToggle }) => {
     <nav className={`navbar navbar-expand-lg fixed-top ${theme === 'dark' ? 'navbar-dark' : 'navbar-light'} ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <a className="navbar-brand" href="#home">
-          <span className="brand-text">Denis Díaz</span>
-          <span className="brand-subtitle">Full Stack Developer</span>
+          <img
+            src={require('../img/logo.png')}
+            alt="Logo"
+            style={{
+              height: '72px',
+              width: '72px',
+              objectFit: 'contain',
+              filter: theme === 'light' ? 'brightness(0) saturate(100%) invert(12%) sepia(60%) saturate(600%) hue-rotate(220deg)' : 'none',
+              transition: 'filter 0.3s'
+            }}
+          />
         </a>
 
-        <div className="navbar-controls">
-          {/* Theme Toggle Button */}
-          <button
-            className="theme-toggle-navbar"
-            onClick={onThemeToggle}
-            aria-label="Toggle theme"
-          >
-            {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
-          </button>
-
-          <button
-            className="navbar-toggler custom-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
+        <button
+          className="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
@@ -90,6 +88,15 @@ const Navbar = ({ theme, onThemeToggle }) => {
               );
             })}
           </ul>
+          {/* Theme Toggle Button moved to the far right */}
+          <button
+            className="theme-toggle-navbar ms-3"
+            onClick={onThemeToggle}
+            aria-label="Toggle theme"
+            style={{ marginLeft: '1.5rem' }}
+          >
+            {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
+          </button>
         </div>
       </div>
     </nav>
