@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import "../styles/individualproyect.css";
 import IndividualProyect from "./IndividualProyect";
 
@@ -145,6 +146,33 @@ const Proyects = ({ theme }) => {
       <div className={`projects-grid ${isVisible ? "fade-in" : "fade-out"}`}>
         {projectsData.map((project, index) => (
           <IndividualProyect key={index} {...project} index={index} />
+        ))}
+      </div>
+      
+      {/* Floating Elements */}
+      <div className="floating-elements">
+        {[...Array(8)].map((_, i) => (
+          <motion.div
+            key={i}
+            className={`floating-element element-${i % 3}`}
+            animate={{
+              y: [0, -30, 0],
+              x: [0, Math.random() * 20 - 10, 0],
+              opacity: [0.2, 0.8, 0.2],
+              scale: [1, 1.2, 1],
+              rotate: [0, 180, 360],
+            }}
+            transition={{
+              duration: Math.random() * 4 + 4,
+              repeat: Infinity,
+              delay: Math.random() * 3,
+              ease: "easeInOut",
+            }}
+            style={{
+              left: `${5 + Math.random() * 90}%`,
+              top: `${5 + Math.random() * 90}%`,
+            }}
+          />
         ))}
       </div>
     </div>
