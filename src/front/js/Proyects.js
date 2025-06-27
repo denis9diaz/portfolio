@@ -34,7 +34,7 @@ const Proyects = ({ theme }) => {
         "Diseño completo de página web donde se muestran las probabilidades de cada partido basadas en métodos estadísticos verificados.",
         "Sistema de registro de usuarios y cálculo automático de estadísticas.",
       ],
-      videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1750950416/Compartir_pantalla_-_2025-06-26_17_03_03_e1ainx.mp4",
+      videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1751042920/demo_ux9jrf.mp4",
       codeLink: "https://football-analytics-ten.vercel.app/",
       technologies: [
         { src: astro, alt: "astro" },
