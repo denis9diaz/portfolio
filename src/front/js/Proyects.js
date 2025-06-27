@@ -35,7 +35,7 @@ const Proyects = ({ theme }) => {
         "Sistema de registro de usuarios y cálculo automático de estadísticas.",
       ],
       videoLink: "https://res.cloudinary.com/dxzhssh9m/video/upload/v1751042920/demo_ux9jrf.mp4",
-      codeLink: "https://football-analytics-ten.vercel.app/",
+      codeLink: "https://www.golytick.com/",
       technologies: [
         { src: astro, alt: "astro" },
         { src: react, alt: "react" },
