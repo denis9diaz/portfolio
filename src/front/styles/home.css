@@ -20,7 +20,9 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #554191, #987af0);
+    /* Quitar fondo y sombra para que solo se vea el logo */
+    background: none;
+    box-shadow: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +30,7 @@
     font-weight: bold;
     color: white;
     margin: 0 auto 20px;
-    box-shadow: 0 10px 30px rgba(85, 65, 145, 0.3);
+    /* El resto se mantiene para centrar */
 }
 
 .loading-text {
@@ -105,7 +107,8 @@ body.dark .loading-screen {
 }
 
 body.dark .loading-logo {
-    background: linear-gradient(135deg, #ae9eff, #c1b4ff);
+    background: none;
+    box-shadow: none;
 }
 
 body.dark .loading-text {

@@ -63,7 +63,9 @@ const Home = () => {
             transition={{ duration: 0.8 }}
         >
             <div className="loading-content">
-                <motion.div 
+                <motion.img 
+                    src={require('../img/logo.png')} 
+                    alt="Logo"
                     className="loading-logo"
                     animate={{ 
                         rotate: 360,
@@ -73,9 +75,8 @@ const Home = () => {
                         rotate: { duration: 2, repeat: Infinity, ease: "linear" },
                         scale: { duration: 1.5, repeat: Infinity }
                     }}
-                >
-                    DD
-                </motion.div>
+                    style={{ width: 80, height: 80, objectFit: 'contain' }}
+                />
                 <motion.h2 
                     className="loading-text"
                     animate={{ opacity: [0.5, 1, 0.5] }}
