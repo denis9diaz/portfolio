@@ -1,5 +1,9 @@
 /* Navbar moderno y elegante */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   transition: all 0.00s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 1rem 0;
   backdrop-filter: blur(20px);
@@ -7,7 +11,6 @@
   /* Elimina el border-bottom clásico */
   border-bottom: none;
   z-index: 1000;
-  position: relative;
 }
 
 /* Línea inferior moderna: más gruesa en el centro, fina a los lados */

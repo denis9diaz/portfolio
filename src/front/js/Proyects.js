@@ -6,7 +6,7 @@ import IndividualProyect from "./IndividualProyect";
 import UrbanTreasures from "../img/UrbanTreasures.png";
 import DenisBets from "../img/DenisBets.png";
 import BetTracker from "../img/BetTracker.png";
-import FutbolAnalytics from "../img/FutbolAnalytics.png";
+import Golytick from "../img/Golytick.png";
 
 import bootstrap from "../img/bootstrap.png";
 import css from "../img/css.png";
@@ -28,8 +28,8 @@ const Proyects = ({ theme }) => {
 
   const projectsData = [
     {
-      image: FutbolAnalytics,
-      title: "Fútbol Analytics",
+      image: Golytick,
+      title: "Golytick",
       descriptions: [
         "Diseño completo de página web donde se muestran las probabilidades de cada partido basadas en métodos estadísticos verificados.",
         "Sistema de registro de usuarios y cálculo automático de estadísticas.",
