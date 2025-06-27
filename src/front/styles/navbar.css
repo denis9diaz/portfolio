@@ -1,16 +1,41 @@
 /* Navbar moderno y elegante */
 .navbar {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.00s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 1rem 0;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Elimina el border-bottom clásico */
+  border-bottom: none;
   z-index: 1000;
+  position: relative;
 }
 
-.navbar.scrolled {
-  padding: 0.5rem 0;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+/* Línea inferior moderna: más gruesa en el centro, fina a los lados */
+.navbar::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 4px;
+  background: radial-gradient(ellipse at center, rgba(174,158,255,0.35) 0%, rgba(174,158,255,0.15) 60%, rgba(174,158,255,0.05) 100%);
+  border-radius: 6px;
+  box-shadow: 0 2px 16px 0 rgba(174,158,255,0.15);
+  pointer-events: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar::after {
+    width: 92%;
+    height: 3px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar::after {
+    width: 98%;
+    height: 2px;
+  }
 }
 
 /* Brand styling */
@@ -173,12 +198,12 @@
 
 /* Light theme */
 body.light .navbar {
-  background: rgba(247, 246, 250, 0.95);
+  background-color: #F6F3FF;
   border-bottom: 1px solid rgba(81, 64, 134, 0.1);
 }
 
 body.light .navbar.scrolled {
-  background: rgba(247, 246, 250, 0.98);
+  background-color: #F6F3FF;
   box-shadow: 0 8px 32px rgba(81, 64, 134, 0.15);
 }
 
@@ -223,12 +248,12 @@ body.light .theme-toggle-navbar:hover {
 
 /* Dark theme */
 body.dark .navbar {
-  background: rgba(42, 0, 62, 0.95);
+  background-color: #190B2B;
   border-bottom: 1px solid rgba(174, 158, 255, 0.1);
 }
 
 body.dark .navbar.scrolled {
-  background: rgba(42, 0, 62, 0.98);
+  background-color: #190B2B;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -322,5 +347,9 @@ body.dark .theme-toggle-navbar:hover {
   
   .navbar-controls {
     gap: 0.5rem;
+  }
+  
+  .navbar-brand {
+    margin-left: 0.75rem;
   }
 }

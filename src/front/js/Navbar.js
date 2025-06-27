@@ -56,7 +56,15 @@ const Navbar = ({ theme, onThemeToggle }) => {
             }}
           />
         </a>
-
+        {/* Botón de theme toggle SOLO visible en móvil (junto al hamburguesa) */}
+        <button
+          className="theme-toggle-navbar ms-2 d-lg-none"
+          onClick={onThemeToggle}
+          aria-label="Toggle theme"
+          style={{ marginRight: '0.75rem' }}
+        >
+          {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
+        </button>
         <button
           className="navbar-toggler custom-toggler"
           type="button"
@@ -70,9 +78,8 @@ const Navbar = ({ theme, onThemeToggle }) => {
           <span></span>
           <span></span>
         </button>
-
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav align-items-center">
             {navItems.map((item) => {
               const IconComponent = item.icon;
               return (
@@ -87,16 +94,18 @@ const Navbar = ({ theme, onThemeToggle }) => {
                 </li>
               );
             })}
+            {/* Botón de theme toggle SOLO visible en escritorio (a la derecha de Sobre mí) */}
+            <li className="nav-item d-none d-lg-flex">
+              <button
+                className="theme-toggle-navbar ms-3"
+                onClick={onThemeToggle}
+                aria-label="Toggle theme"
+                style={{ marginLeft: '1.5rem' }}
+              >
+                {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
+              </button>
+            </li>
           </ul>
-          {/* Theme Toggle Button moved to the far right */}
-          <button
-            className="theme-toggle-navbar ms-3"
-            onClick={onThemeToggle}
-            aria-label="Toggle theme"
-            style={{ marginLeft: '1.5rem' }}
-          >
-            {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
-          </button>
         </div>
       </div>
     </nav>

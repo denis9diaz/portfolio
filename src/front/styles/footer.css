@@ -214,11 +214,11 @@
 }
 
 .footer.light-theme .copyright {
-  color: #6b7280;
+  color: #4d525c;
 }
 
 .footer.dark-theme .copyright {
-  color: #9ca3af;
+  color: #bac0c9;
 }
 
 .made-with {
@@ -231,11 +231,11 @@
 }
 
 .footer.light-theme .made-with {
-  color: #6b7280;
+  color: #4d525c;
 }
 
 .footer.dark-theme .made-with {
-  color: #9ca3af;
+  color: #bac0c9;
 }
 
 .heart {
