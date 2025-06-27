@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ab6f0128.css",
-    "main.js": "/portfolio/static/js/main.71d8cd52.js",
+    "main.css": "/portfolio/static/css/main.5a1d7c1d.css",
+    "main.js": "/portfolio/static/js/main.554a0c7d.js",
     "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/UrbanTreasures.png": "/portfolio/static/media/UrbanTreasures.dac5b6f1c52b6e45ea79.png",
     "static/media/mifoto.png": "/portfolio/static/media/mifoto.1e88ea497a8541ce8f85.png",
     "static/media/logo.png": "/portfolio/static/media/logo.12f473d5298ecba76ba9.png",
     "static/media/BetTracker.png": "/portfolio/static/media/BetTracker.48baf2d8c444fbacc33f.png",
     "static/media/DenisBets.png": "/portfolio/static/media/DenisBets.1a44e82f219dc7df5c80.png",
-    "static/media/FutbolAnalytics.png": "/portfolio/static/media/FutbolAnalytics.4b36e1ab13c3a1b2d3c6.png",
+    "static/media/Golytick.png": "/portfolio/static/media/Golytick.8302b7f4bccacb13150b.png",
     "static/media/flask.png": "/portfolio/static/media/flask.17562dff5d07f94fb94b.png",
     "static/media/angular.png": "/portfolio/static/media/angular.8011d83124f8f3d82644.png",
     "static/media/astro.png": "/portfolio/static/media/astro.25240e6d3b161a916ca6.png",
@@ -24,12 +24,12 @@
     "static/media/python.webp": "/portfolio/static/media/python.8f11be9245e080c61711.webp",
     "static/media/jwt.webp": "/portfolio/static/media/jwt.4436b948358e74b62411.webp",
     "index.html": "/portfolio/index.html",
-    "main.ab6f0128.css.map": "/portfolio/static/css/main.ab6f0128.css.map",
-    "main.71d8cd52.js.map": "/portfolio/static/js/main.71d8cd52.js.map",
+    "main.5a1d7c1d.css.map": "/portfolio/static/css/main.5a1d7c1d.css.map",
+    "main.554a0c7d.js.map": "/portfolio/static/js/main.554a0c7d.js.map",
     "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab6f0128.css",
-    "static/js/main.71d8cd52.js"
+    "static/css/main.5a1d7c1d.css",
+    "static/js/main.554a0c7d.js"
   ]
 }
